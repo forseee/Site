@@ -1,0 +1,48 @@
+.section_third {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 10px;
+  margin-left: 13px;
+  margin-right: 12px;
+}
+.content_link--third {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 200px;
+  align-items: flex-start;
+  background: #e3ebd3;
+}
+.content_link--third:nth-child(2) {
+  padding-top: 10px;
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.content_link--third:nth-child(3) {
+  background: url("./IMG/image.png") center top no-repeat rgb(255, 255, 255);
+  color: white;
+}
+.ingredients {
+  padding: 0; /* Убираем отступы */
+ }
+ .ingredients li {
+  align-items: baseline; 
+  display: flex; 
+  margin-bottom: 3em;
+ }
+ .ingredients li::before {
+  content: '';
+  border-bottom: 1px dashed rgb(0, 0, 0); 
+  flex-grow: 1;
+  order: 2; 
+  margin: 0 10px; 
+ }
+ .ingredients .value {
+  order: 3; 
+ }
+
+@media screen and (max-width: 480px) {
+  .section_third {
+    display: none;
+  }
+}
